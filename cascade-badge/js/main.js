@@ -40,3 +40,10 @@ console.log(isMultiple([68, -1, 1, -7, 10, 10]))
 
 
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.Return your answer as a number.
+
+const getSum = array => {
+    let numArr = array.map(x => Number(x))
+    return numArr.reduce((acc, curr) => acc+curr, 0)
+}
+
+console.log(getSum([1,"1","2",3]))
