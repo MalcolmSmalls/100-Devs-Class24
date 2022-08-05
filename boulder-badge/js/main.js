@@ -27,3 +27,11 @@ canCharmanderFight(fahrenheitToCelsius(32.1))
 
 //Loops
 //You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party
+
+const pikachuChoice = numOfPokemon => {
+    for(i = 0; i < numOfPokemon; i++){
+        console.log('Pikachu, I choose you!')
+    }
+}
+
+pikachuChoice(10)
